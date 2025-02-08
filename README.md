@@ -10,9 +10,9 @@ A simple Task Manager project built as a learning exercise to improve my skills 
 
 ## Project Structure
 
-my-task-manager/ 
-├── backend/ # Express API with TypeScript (in-memory store) 
-└── frontend/ # React app built with Vite (TypeScript)
+    my-task-manager/
+    ├── backend/ # Express API with TypeScript (in-memory store)
+    └── frontend/ # React app built with Vite (TypeScript)
 
 
 ## Getting Started
@@ -64,3 +64,5 @@ Feel free to fork the repository and open a pull request. This project is mainly
 MIT
 
 ---
+
+By WonerlustKing11
