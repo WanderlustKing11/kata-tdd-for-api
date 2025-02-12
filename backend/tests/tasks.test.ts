@@ -1,13 +1,7 @@
 
 import request from 'supertest';
-import express, { Application } from 'express';
+import app from '../src/app';
 
-const app: Application = express();
-app.use(express.json());
-
-app.get('/tasks', (req, res) => {
-    res.status(500).send();
-});
 
 describe('GET /tasks', () => {
     it('should return an empty array when no tasks exist', async () => {
