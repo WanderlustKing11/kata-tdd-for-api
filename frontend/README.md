@@ -48,3 +48,8 @@ export default tseslint.config({
   },
 })
 ```
+
+## My notes
+
+We are running asynchronous operations, and so because our Express server is starting to listen on a port during the testing, and the open server (TCP handle) isn't being closed when the test finishes, Jest is detecting this and suggesting to run with the flag `--detectOpenHandles`
+- `npx jest --detectOpenHandles`

@@ -1,7 +1,10 @@
 import express, { Request, Response } from 'express';
 import { tasks, addTask } from './tasks';
+import cors from 'cors';
 
 const app = express();
+
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
@@ -18,9 +21,11 @@ app.post('/tasks', (req: Request, res: Response) => {
     res.status(400).json({ error: 'Title is required' });
     return;
   }
+  
   const newTask = addTask(title);
   res.status(201).json(newTask);
 });
+
 
 // New: GET /tasks/:id endpoint
 app.get('/tasks/:id', (req: Request, res: Response) => {
