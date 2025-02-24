@@ -494,4 +494,4 @@ Happy coding and enjoy your practice!
 
 ---
 
-Feel free to adjust or expand this manual as you gain more experience. This document is your living guide for mastering the fundamentals through repetition.
+Feel free to adjust or expand your practice as you gain more experience, and watch this project develope over time. This document is your living guide for mastering the fundamentals through repetition.
